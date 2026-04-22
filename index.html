@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Meena | Cybersecurity Analyst & Bug Bounty Hunter</title>
+    <meta name="description" content="Portfolio of Ajay Meena — Cybersecurity Analyst, Bug Bounty Hunter with 200+ vulnerabilities reported to NASA, PhonePe, Paytm and more.">
+    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, security researcher">
+    <meta name="author" content="Ajay Meena">
+    <meta property="og:title" content="Ajay Meena | Cybersecurity Analyst">
+    <meta property="og:description" content="Securing the web, one vulnerability at a time.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;AjayMeena/&gt;</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#advisories" class="nav-link">Advisories</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#certs" class="nav-link">Certs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon-sun"></i>
+                    <i class="fas fa-moon" id="theme-icon-moon"></i>
+                </button>
+                <button id="mobile-toggle" class="mobile-btn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span> SYSTEM ACTIVE — READY TO DEPLOY
+            </div>
+            <h1 class="hero-name reveal-up delay-1">
+                Ajay <span class="accent">Meena</span>
+            </h1>
+            <p class="hero-role reveal-up delay-2">Cybersecurity Analyst <span class="separator">|</span> Bug Bounty Hunter</p>
+            <div class="hero-terminal reveal-up delay-3">
+                <span class="prompt">$&gt;</span>
+                <span id="typing-text"></span><span class="cursor">█</span>
+            </div>
+            <p class="hero-tagline reveal-up delay-3">"Securing the web, one vulnerability at a time"</p>
+            <div class="hero-actions reveal-up delay-4">
+                <a href="#projects" class="btn btn-primary"><i class="fas fa-shield-halved"></i> View Projects</a>
+                <a href="#contact" class="btn btn-outline"><i class="fas fa-terminal"></i> Contact Me</a>
+            </div>
+            <div class="hero-socials reveal-up delay-5">
+                <a href="https://www.linkedin.com/in/ajay-meena-6b432128a/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Cybertechajju" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://youtube.com/@Cybertechajju" target="_blank" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://medium.com/@Cybertechajju" target="_blank" class="social-link" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
+                <a href="https://instagram.com/Cybertechajju" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">01.</span> About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>Cybersecurity Analyst with <strong class="accent">3+ years</strong> of hands-on experience in penetration testing, vulnerability assessment, bug bounty hunting, and cybersecurity training.</p>
+                    <p>Reported <strong class="accent">200+ valid bugs</strong> to organizations including <strong>NASA, PhonePe, Paytm, NextCloud, Zendesk, Zomato, Dominos</strong>, and others.</p>
+                    <p>Ranked <strong class="accent">Top 2 on HackerOne</strong> for NextCloud. Passionate about securing digital infrastructure and mentoring the next generation of security professionals.</p>
+                </div>
+                <div class="stats-grid reveal-right">
+                    <div class="stat-card glass-card">
+                        <div class="stat-value" data-target="3">0</div>
+                        <div class="stat-label">Years Exp</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-value" data-target="200">0</div>
+                        <div class="stat-label">Bugs Reported</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-value" data-target="2">0</div>
+                        <div class="stat-label">H1 Rank</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-value" data-target="10">0</div>
+                        <div class="stat-label">K+ Subs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">02.</span> Experience</h2>
+            <div class="timeline">
+                <div class="tl-item reveal-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card glass-card">
+                        <span class="tl-date">July 2025 – Present</span>
+                        <h3>Cyber Security Trainer / Instructor</h3>
+                        <p class="tl-company">Samyak Computer Classes, Jaipur</p>
+                        <p class="tl-desc">Training students in ethical hacking, penetration testing, and cybersecurity fundamentals.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card glass-card">
+                        <span class="tl-date">Dec 2024 – Present</span>
+                        <h3>Bug Bounty Hunter & Security Researcher</h3>
+                        <p class="tl-company">Freelance — HackerOne, Bugcrowd</p>
+                        <p class="tl-desc">Identifying and reporting critical vulnerabilities in web applications for major organizations.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card glass-card">
+                        <span class="tl-date">Feb 2024 – July 2024</span>
+                        <h3>Cybersecurity Analyst</h3>
+                        <p class="tl-company">CyberCure Technologies Pvt. Ltd.</p>
+                        <p class="tl-desc">Conducted vulnerability assessments, penetration testing, and security audits for enterprise clients.</p>
+                    </div>
+                </div>
+                <div class="tl-item reveal-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card glass-card">
+                        <span class="tl-date">May 2025</span>
+                        <h3>Cybersecurity Workshop Trainer</h3>
+                        <p class="tl-company">Central Sanskrit University</p>
+                        <p class="tl-desc">Delivered hands-on cybersecurity workshops covering OWASP Top 10 and web application security.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">03.</span> Achievements</h2>
+            <div class="achievements-grid">
+                <div class="ach-card glass-card reveal-up"><div class="ach-icon"><i class="fas fa-bug"></i></div><h3>200+ Vulnerabilities</h3><p>Valid bugs reported across major platforms</p></div>
+                <div class="ach-card glass-card reveal-up delay-1"><div class="ach-icon"><i class="fas fa-trophy"></i></div><h3>Top 2 — HackerOne</h3><p>Ranked #2 for NextCloud program</p></div>
+                <div class="ach-card glass-card reveal-up delay-2"><div class="ach-icon"><i class="fas fa-star"></i></div><h3>Hall of Fame</h3><p>NASA, PhonePe, Paytm, NextCloud, Zendesk, Zomato, Dominos</p></div>
+                <div class="ach-card glass-card reveal-up delay-1"><div class="ach-icon"><i class="fas fa-flag-checkered"></i></div><h3>NFSU National CTF</h3><p>Winner — National Forensic Sciences University CTF</p></div>
+                <div class="ach-card glass-card reveal-up delay-2"><div class="ach-icon"><i class="fab fa-youtube"></i></div><h3>10K+ Subscribers</h3><p>Growing cybersecurity community on YouTube</p></div>
+                <div class="ach-card glass-card reveal-up delay-3"><div class="ach-icon"><i class="fas fa-chalkboard-teacher"></i></div><h3>University Trainer</h3><p>Trained students at universities & institutions</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADVISORIES ===== -->
+    <section id="advisories">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">04.</span> Security Advisories</h2>
+            <div class="adv-grid">
+                <div class="adv-card adv-critical glass-card reveal-up">
+                    <div class="adv-badge critical">CRITICAL</div>
+                    <h3>OS Command Injection</h3>
+                    <p>Remote code execution via unsanitized user input in server-side command processing.</p>
+                    <div class="cvss-row"><span class="cvss-score critical">CVSS 8.8</span><div class="cvss-bar"><div class="cvss-fill" style="--w:88%" data-color="critical"></div></div></div>
+                </div>
+                <div class="adv-card adv-high glass-card reveal-up delay-1">
+                    <div class="adv-badge high">HIGH</div>
+                    <h3>IDOR</h3>
+                    <p>Insecure Direct Object Reference allowing unauthorized access to sensitive user data.</p>
+                    <div class="cvss-row"><span class="cvss-score high">CVSS 7.5</span><div class="cvss-bar"><div class="cvss-fill" style="--w:75%" data-color="high"></div></div></div>
+                </div>
+                <div class="adv-card adv-moderate glass-card reveal-up delay-2">
+                    <div class="adv-badge moderate">MODERATE</div>
+                    <h3>Stored XSS</h3>
+                    <p>Persistent cross-site scripting via malicious payload injection in user-generated content.</p>
+                    <div class="cvss-row"><span class="cvss-score moderate">CVSS 5.4</span><div class="cvss-bar"><div class="cvss-fill" style="--w:54%" data-color="moderate"></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">05.</span> Projects</h2>
+            <div class="projects-grid">
+                <div class="proj-card glass-card reveal-up">
+                    <div class="proj-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Bug Bounty Automation Tool</h3>
+                    <p>Automated recon and vulnerability scanning pipeline for bug bounty programs with subdomain enumeration and XSS detection.</p>
+                    <div class="proj-tags"><span>Python</span><span>Bash</span><span>Docker</span></div>
+                    <a href="https://github.com/Cybertechajju" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="proj-card glass-card reveal-up delay-1">
+                    <div class="proj-icon"><i class="fas fa-crosshairs"></i></div>
+                    <h3>ScanVortex</h3>
+                    <p>High-performance web application scanner with intelligent crawling, parameter fuzzing, and vulnerability detection engine.</p>
+                    <div class="proj-tags"><span>Python</span><span>Flask</span><span>SQLite</span></div>
+                    <a href="https://github.com/Cybertechajju" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="proj-card glass-card reveal-up delay-2">
+                    <div class="proj-icon"><i class="fas fa-code"></i></div>
+                    <h3>SourceLeakHacker</h3>
+                    <p>Tool to detect exposed source code, configuration files, and sensitive data leaks on web servers and repositories.</p>
+                    <div class="proj-tags"><span>Python</span><span>Regex</span><span>APIs</span></div>
+                    <a href="https://github.com/Cybertechajju" target="_blank" class="proj-link"><i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">06.</span> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-cat glass-card reveal-left">
+                    <h3><i class="fas fa-shield-halved"></i> Security</h3>
+                    <div class="skill-tags"><span>Penetration Testing</span><span>VAPT</span><span>Bug Bounty</span><span>OWASP Top 10</span><span>Threat Modeling</span><span>Incident Response</span><span>Red Teaming</span><span>OSINT</span></div>
+                </div>
+                <div class="skill-cat glass-card reveal-up">
+                    <h3><i class="fas fa-wrench"></i> Tools</h3>
+                    <div class="skill-tags"><span>Burp Suite</span><span>Nmap</span><span>Metasploit</span><span>Wireshark</span><span>Nuclei</span><span>SQLMap</span><span>Subfinder</span><span>FFUF</span></div>
+                </div>
+                <div class="skill-cat glass-card reveal-right">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-tags"><span>Python</span><span>Bash</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span><span>Linux</span><span>Git</span><span>Docker</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certs">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">07.</span> Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card glass-card reveal-up"><i class="fas fa-certificate"></i><h3>Advent of Cyber 2024</h3><p>TryHackMe</p></div>
+                <div class="cert-card glass-card reveal-up delay-1"><i class="fas fa-certificate"></i><h3>Advent of Cyber 2023</h3><p>TryHackMe</p></div>
+                <div class="cert-card glass-card reveal-up delay-2"><i class="fas fa-certificate"></i><h3>Advent of Cyber 2022</h3><p>TryHackMe</p></div>
+                <div class="cert-card glass-card reveal-up delay-1"><i class="fas fa-search"></i><h3>Threat Intelligence Analyst</h3><p>arcX</p></div>
+                <div class="cert-card glass-card reveal-up delay-2"><i class="fas fa-robot"></i><h3>UiPath Hack-A-Bot</h3><p>UiPath</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title reveal-up"><span class="title-num">08.</span> Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <p class="contact-intro">Interested in collaboration, security consulting, or cybersecurity training? Let's connect!</p>
+                    <div class="info-item"><i class="fas fa-envelope"></i><div><small>Email</small><span>ajaymeena****@gmail.com</span></div></div>
+                    <div class="info-item"><i class="fas fa-phone"></i><div><small>Phone</small><span>+91-1234567890</span></div></div>
+                    <div class="info-item"><i class="fas fa-location-dot"></i><div><small>Location</small><span>Jaipur, Rajasthan, India</span></div></div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/ajay-meena-6b432128a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Cybertechajju" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://youtube.com/@Cybertechajju" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://medium.com/@Cybertechajju" target="_blank"><i class="fab fa-medium-m"></i></a>
+                        <a href="https://instagram.com/Cybertechajju" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form glass-card reveal-right" onsubmit="return handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary full-width"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ajay Meena. All rights reserved.</p>
+        <p class="footer-sub">Built with <span class="accent">passion</span> and <span class="accent-blue">security</span> in mind.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
